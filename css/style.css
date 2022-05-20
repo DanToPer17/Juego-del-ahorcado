@@ -97,6 +97,15 @@ footer{
 .pantalla-inicio-juego-on{
     display: block;
 }
+.contenedor-dibujo{
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.dibujo {
+    width: 100%;
+    height: auto;
+}
 /*====================Pantalla: Agregar palabra=============================*/
 .pantalla-adicionar-Palabra{
     display: none;
@@ -203,11 +212,16 @@ footer{
     .caja-texto{
         width: auto;
     }
+    .contenedor-dibujo{
+        max-width: 50px;
+    }
 }
 /*====================RESPOSIVO:  Dispositivos laptops=============================*/
 @media screen and (max-width: 1280px) {
     .vacio{
         height: 0px ;
-        background: aquamarine;
+    }
+    .contenedor-dibujo{
+        max-width: 200px;
     }
 }

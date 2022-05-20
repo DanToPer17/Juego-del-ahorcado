@@ -1,9 +1,7 @@
 var palabraIngresada = document.querySelector(".caja-texto");
 var botonGuardarEmpezar = document.querySelector(".boton-guardar-palabra");
 var cajaTexto = document.querySelector(".caja-texto");
-
 var pantallaAdicionarPalabra = document.querySelector(".pantalla-adicionar-Palabra");
-
 
 var palabras = ["AMAZONAS", "BOGOTA", "TOKIO", "RIO", "MEDELLIN", "MEXICO", "PERU", "ECUADOR", "PORTUGAL"];
 var palabraNueva;
@@ -23,7 +21,6 @@ palabraIngresada.addEventListener("input", function(){
             palabraNueva = null;
         }     
 });
-
 botonGuardarEmpezar.addEventListener("click", function(event){
     event.preventDefault();
         
@@ -49,7 +46,4 @@ function palabraRandom(palabras){
     var random = Math.floor(Math.random()*palabras.length);
     palabraAleatoria = palabras[random];
     console.log("Palabra Random= " + palabraAleatoria)
-}
-function incativacionPantallaAgregarPalabra(){
-    pantallaAdicionarPalabra.style.display = "none";
 }
