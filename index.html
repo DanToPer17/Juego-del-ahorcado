@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <h1><img src="img/logo-alura.png" class="logo-alura"></h1>
+        <h2 class="titulo">Sprint #2: Juego del ahorcado</h2>
+    </header>
+    <main>
+        <section class="pantalla-home">
+            <div class="contenedor-botones-home">
+                <button type="button" class="boton-iniciar">Iniciar juego</button>
+                <button type="button" class="boton-agregar">Agregar palabra</button>   
+            </div>
+        </section>
+        <section class="pantalla-inicio-juego">
+            <div class="contenedor-principal">
+                <div class="contenedor-texto">
+                    <h1>Lorem Ipsum</h1>
+                </div>
+                <div class="vacio"></div>
+                <div class="contenedor-botones-agregar-palabra">
+                    <button type="button" class="boton-inicio-juego">Nuevo juego</button>
+                    <a href="index.html" class="boton-cancelar-inicio-juego">Cancelar</a><br>
+                </div>
+            </div>
+        </section>
+        <section class="pantalla-adicionar-Palabra">
+            <div class="contenedor-principal">
+                <div class="contenedor-texto">
+                    <textarea name="textarea" class="caja-texto" cols="15" rows="10" placeholder="Ingrese una palabra"></textarea>
+                    <p class="advertencia"><img src="img/advertencia.png" alt="advertencia">Máx. de 8 letras.</p> 
+                </div><br>
+                <div class="vacio"></div>
+                <div class="contenedor-botones-agregar-palabra">
+                    <button type="button" class="boton-guardar-palabra">Guardar y empezar</button>
+                    <a href="index.html" class="boton-cancelar-palabra">Cancelar</a><br>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="copyright">&#169; Alura LATAM | Devp: Daniel Tovar Perdomo</p>
+            <a href="https://github.com/DanToPer17"><img src="img/github.png" alt="github" class="logo-social" id="logo-social-github"></a>
+            <a href="https://www.linkedin.com/in/danieltoper/"><img src="img/linkedin.png" alt="linkedin" class="logo-social" id="logo-social-linkedin"></a>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/agregar-palabra.js"></script>
+    <script src="js/iniciar-juego.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

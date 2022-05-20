@@ -1,0 +1,213 @@
+/*====================Pantalla: Comun=============================*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #F3F5FC;
+}
+.encabezado{
+    display:  flex;
+    margin: 40px 0 40px 84px;
+    align-items: center;
+}
+.titulo{
+    padding-left: 10px;
+    font-size: 1.1rem;
+    color: #343A40;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    background: gainsboro;
+    bottom: 0;
+    position: fixed;
+}
+.copyright{
+    margin-bottom: 10px;
+}
+.logo-social{
+    width: 35px;
+    border-radius: 5px; 
+    box-shadow: 8px 3px 15px#0A3871;
+    margin: 5px;
+    transition: 0.4s;
+    background: #0A3871;
+    animation: float 3s ease-in-out infinite;
+}
+#logo-social-github{
+    animation-delay: 1s;
+}
+#logo-social-linkedin{
+    animation-delay: 0.5s;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*====================Pantalla: principal=============================*/
+.pantalla-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.contenedor-botones-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton-iniciar, .boton-agregar{
+    width: 328px;
+    background: #0A3871;
+    border-radius: 15px;
+    border-color: #0A3871;
+    padding: 27px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px;
+    box-shadow:5px 10px 15px #343A40;
+    text-decoration: none;
+    text-align: center;
+}
+.boton-agregar{
+    width: 228px;
+    background: white;
+    font-size: 1rem;
+    color: #0A3871;
+}
+.boton-iniciar:hover, .boton-agregar:hover{
+    transform: scale(1.1);
+}
+/*====================Pantalla: Inicio de Juego=============================*/
+.pantalla-inicio-juego{
+    display: none;
+}
+.pantalla-inicio-juego-on{
+    display: block;
+}
+/*====================Pantalla: Agregar palabra=============================*/
+.pantalla-adicionar-Palabra{
+    display: none;
+}
+.pantalla-adicionar-Palabra-On{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.vacio{
+    height: 20%;
+}
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja-texto::placeholder{
+    color: #0A3871;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+.caja-texto:focus{
+    outline: none;
+}
+.caja-texto{
+    width: 500px;
+    background: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 30px;
+    overflow: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.advertencia{
+    display: flex;
+    font-size: 0.8rem;
+    padding: 10px 30px 10px 30px;
+    align-items: center;
+}
+.contenedor-botones-agregar-palabra{
+    display: flex;
+    align-items: center;
+}
+.boton-guardar-palabra, .boton-cancelar-palabra, .boton-inicio-juego, .boton-cancelar-inicio-juego{
+    width: 328px;
+    background: #0A3871;
+    border-radius: 24px;
+    border-color: #0A3871;
+    padding: 27px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 5px;
+}
+.boton-cancelar-palabra, .boton-cancelar-inicio-juego{
+    width: 270px;
+    background: white;
+    border: solid;
+    color: #0A3871;
+    text-decoration: none;
+    text-align: center;
+}
+/*====================RESPOSIVO:  Dispositivos Smartphones=============================*/
+@media screen and (max-width: 480px) {
+    .encabezado{
+        margin: 5px;
+        padding: 30px 20px 10px 20px;
+    }
+    .titulo{
+        font-size: 0.9rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+    .contenedor-botones-home{
+        display: flex;
+        margin: 50% 35%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-social{
+        width: 27px;
+        margin: 3px;
+    }
+    /*====================Pantalla: Agregar palabra=============================*/
+    .contenedor-botones-agregar-palabra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-texto{
+        width: auto;
+    }
+}
+/*====================RESPOSIVO:  Dispositivos laptops=============================*/
+@media screen and (max-width: 1280px) {
+    .vacio{
+        height: 0px ;
+        background: aquamarine;
+    }
+}
