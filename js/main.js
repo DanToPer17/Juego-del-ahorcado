@@ -6,13 +6,11 @@ var pantallaHome = document.querySelector(".pantalla-home");
 
 botonIniciarJuego.addEventListener("click", function(event){
     event.preventDefault();
-    event.target.parentNode.remove();
     incativacionPantallaHome();
     activarPantallaInicarJuego();
 });
 botonAgregarPalabra.addEventListener("click", function(event){
     event.preventDefault();
-    event.target.parentNode.remove();
     incativacionPantallaHome();
     activarPantallaAdicionarPalabra();
 });
@@ -25,6 +23,7 @@ function incativacionPantallaAgregarPalabra(){
 }
 function activarPantallaInicarJuego(){
     pantallaInicarJuego.classList.add("pantalla-inicio-juego-on");
+    agregarpalabra();
 }
 function activarPantallaAdicionarPalabra(){
     pantallaAdicionarPalabra.classList.add("pantalla-adicionar-Palabra-On");

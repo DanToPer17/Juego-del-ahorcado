@@ -22,8 +22,7 @@ palabraIngresada.addEventListener("input", function(){
         }     
 });
 botonGuardarEmpezar.addEventListener("click", function(event){
-    event.preventDefault();
-        
+    event.preventDefault(); 
     if(palabraNueva != undefined){
         agregarpalabra(palabraNueva);
         event.target.parentNode.remove();
@@ -36,14 +35,20 @@ botonGuardarEmpezar.addEventListener("click", function(event){
 });
 
 function agregarpalabra(palabraNueva){
-    palabras.push(palabraNueva);
-    console.log("Palabra ingresada: " + palabraNueva);
-    swal("A jugar!", "Palabra registrada con exito", "success");
-    console.log(palabras);
-    palabraRandom(palabras);
+    if(palabraNueva == undefined){
+        swal("A jugar!", "Sección: países", "success");
+        palabraRandom(palabras);
+    }else{
+        palabras.push(palabraNueva);
+        console.log("Palabra ingresada: " + palabraNueva);
+        swal("A jugar!", "Palabra registrada con exito", "success");
+        console.log(palabras);
+        palabraRandom(palabras);
+    }
 }
 function palabraRandom(palabras){
     var random = Math.floor(Math.random()*palabras.length);
     palabraAleatoria = palabras[random];
-    console.log("Palabra Random= " + palabraAleatoria)
+    console.log("Palabra Random= " + palabraAleatoria);
+    mostarPalabra(palabraAleatoria);
 }

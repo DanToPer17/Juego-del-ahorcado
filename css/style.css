@@ -106,6 +106,14 @@ footer{
     width: 100%;
     height: auto;
 }
+.contenedor-letras{
+    margin: 5px;
+}
+p span{
+    margin: 0 5px;
+    font-size: 3.5rem;
+    color: #0A3871;
+}
 /*====================Pantalla: Agregar palabra=============================*/
 .pantalla-adicionar-Palabra{
     display: none;
@@ -149,7 +157,6 @@ footer{
     font-size: 1.5rem;
     padding: 30px;
     overflow: auto;
-    text-align: center;
     text-transform: uppercase;
 }
 .advertencia{
@@ -162,7 +169,7 @@ footer{
     display: flex;
     align-items: center;
 }
-.boton-guardar-palabra, .boton-cancelar-palabra, .boton-inicio-juego, .boton-cancelar-inicio-juego{
+.boton-guardar-palabra, .boton-cancelar-palabra, .boton-nuevo-juego, .boton-desistir-juego{
     width: 328px;
     background: #0A3871;
     border-radius: 24px;
@@ -173,7 +180,7 @@ footer{
     color: white;
     margin: 5px;
 }
-.boton-cancelar-palabra, .boton-cancelar-inicio-juego{
+.boton-cancelar-palabra, .boton-desistir-juego{
     width: 270px;
     background: white;
     border: solid;
