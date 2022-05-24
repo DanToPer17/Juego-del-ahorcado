@@ -114,6 +114,10 @@ p span{
     font-size: 3.5rem;
     color: #0A3871;
 }
+.contenedor-botones-inicio-juego{
+    display: flex;
+    align-items: center;
+}
 /*====================Pantalla: Agregar palabra=============================*/
 .pantalla-adicionar-Palabra{
     display: none;
@@ -222,6 +226,26 @@ p span{
     .contenedor-dibujo{
         max-width: 50px;
     }
+    /*====================Pantalla: Inicio Juego=============================*/
+    .contenedor-botones-inicio-juego{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .boton-nuevo-juego, .boton-desistir-juego{
+        width: 50%;
+        height: 50px;
+        padding: 0;
+    }
+    .boton-desistir-juego{
+        width: 50%;
+        height: 44px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 /*====================RESPOSIVO:  Dispositivos laptops=============================*/
 @media screen and (max-width: 1280px) {
@@ -229,6 +253,7 @@ p span{
         height: 0px ;
     }
     .contenedor-dibujo{
-        max-width: 200px;
+        max-width: 150px;
     }
+
 }
