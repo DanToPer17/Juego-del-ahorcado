@@ -118,6 +118,13 @@ p span{
     display: flex;
     align-items: center;
 }
+.botones-letras{
+    display: none;
+    margin: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center
+}
 /*====================Pantalla: Agregar palabra=============================*/
 .pantalla-adicionar-Palabra{
     display: none;
@@ -245,7 +252,16 @@ p span{
         flex-direction: column;
         justify-content: center;
     }
-
+    .botones-letras{
+        display: flex;
+    }
+    #tecla{
+        width: 30px;
+        margin: 2.5px;
+        background: #0A3871;
+        color: #F3F5FC;
+        border-radius: 2.5px;    
+    }
 }
 /*====================RESPOSIVO:  Dispositivos laptops=============================*/
 @media screen and (max-width: 1280px) {
@@ -255,5 +271,4 @@ p span{
     .contenedor-dibujo{
         max-width: 150px;
     }
-
 }
