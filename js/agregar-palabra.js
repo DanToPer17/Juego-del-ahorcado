@@ -40,15 +40,27 @@ function agregarpalabra(palabraNueva){
         palabraRandom(palabras);
     }else{
         palabras.push(palabraNueva);
-        console.log("Palabra ingresada: " + palabraNueva);
-        swal("A jugar!", "Palabra registrada con exito", "success");
-        console.log(palabras);
+        //console.log("Palabra ingresada: " + palabraNueva);
+        swal("A jugar!", "Palabra registrada con exito", "info");
+        //console.log(palabras);
         palabraRandom(palabras);
     }
 }
 function palabraRandom(palabras){
     var random = Math.floor(Math.random()*palabras.length);
     palabraAleatoria = palabras[random];
-    console.log("Palabra Random= " + palabraAleatoria);
-    mostarPalabra(palabraAleatoria);
+    //console.log("Palabra Random= " + palabraAleatoria);
+    activarGuiones(palabraAleatoria);
+}
+
+function sorteoNuevoJuego(palabraNueva){
+    if(palabraNueva == undefined){
+        palabraRandom(palabras);
+    }else{
+        palabras.push(palabraNueva);
+        //console.log("Palabra ingresada: " + palabraNueva);
+        //swal("A jugar!", "Palabra registrada con exito", "success");
+        //console.log(palabras);
+        palabraRandom(palabras);
+    }
 }
