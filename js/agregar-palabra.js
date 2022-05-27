@@ -3,7 +3,7 @@ var botonGuardarEmpezar = document.querySelector(".boton-guardar-palabra");
 var cajaTexto = document.querySelector(".caja-texto");
 var pantallaAdicionarPalabra = document.querySelector(".pantalla-adicionar-Palabra");
 
-var palabras = ["AMAZONAS", "BOGOTA", "TOKIO", "RIO", "MEDELLIN", "MEXICO", "PERU", "ECUADOR", "PORTUGAL"];
+var palabras = ["ESPAÑA", "COLOMBIA", "JAPON", "CHINA", "RUSIA", "MEXICO", "PERU", "ECUADOR", "PORTUGAL", "ARGENTINA", "BRASIL", "FRANCIA","LUXEMBURGO"];
 var palabraNueva;
 var palabraAleatoria;
 

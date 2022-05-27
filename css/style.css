@@ -99,10 +99,10 @@ footer{
 }
 .contenedor-dibujo{
     width: 100%;
-    max-width: 280px;
+    max-width: 200px;
     margin: 0 auto;
 }
-.dibujo {
+.dibujo{
     width: 100%;
     height: auto;
 }
@@ -119,15 +119,16 @@ p span{
     align-items: center;
 }
 .botones-letras{
+    width: 1000px;
+    height: 200px;
     display: flex;
-    margin: 5px;
+    margin:0 155px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center
 }
-
 #tecla{
-    width: 30px;
+    width: 90px;
     margin: 2.5px;
     background: #0A3871;
     color: #F3F5FC;
@@ -182,6 +183,7 @@ p span{
     display: flex;
     font-size: 0.8rem;
     padding: 10px 30px 10px 30px;
+    margin-top: 15px;
     align-items: center;
 }
 .contenedor-botones-agregar-palabra{
@@ -206,6 +208,31 @@ p span{
     color: #0A3871;
     text-decoration: none;
     text-align: center;
+}
+/*====================RESPOSIVO:  Dispositivos laptops=============================*/
+@media screen and (max-width: 1280px) {
+    .vacio{
+        height: 0px ;
+    }
+    .contenedor-dibujo{
+        max-width: 150px;
+    }
+    .botones-letras{
+        height: 125px;
+        display: flex;
+        margin:0 155px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center
+    }
+    #tecla{
+        width: 50px;
+        height: 50px;
+        margin: 2.5px;
+        background: #0A3871;
+        color: #F3F5FC;
+        border-radius: 2.5px;    
+    }
 }
 /*====================RESPOSIVO:  Dispositivos Smartphones=============================*/
 @media screen and (max-width: 480px) {
@@ -244,6 +271,9 @@ p span{
         max-width: 50px;
     }
     /*====================Pantalla: Inicio Juego=============================*/
+    .contenedor-dibujo{
+        max-width: 125px;
+    }
     .contenedor-botones-inicio-juego{
         display: flex;
         align-items: center;
@@ -263,22 +293,12 @@ p span{
         justify-content: center;
     }
     .botones-letras{
-        display: flex;
+        margin: 0;
+        width: 95%;
+        height: 100%;
     }
     #tecla{
         width: 30px;
-        margin: 2.5px;
-        background: #0A3871;
-        color: #F3F5FC;
-        border-radius: 2.5px;    
-    }
-}
-/*====================RESPOSIVO:  Dispositivos laptops=============================*/
-@media screen and (max-width: 1280px) {
-    .vacio{
-        height: 0px ;
-    }
-    .contenedor-dibujo{
-        max-width: 150px;
+        height: 40px
     }
 }
