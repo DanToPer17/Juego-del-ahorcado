@@ -35,11 +35,9 @@ for(var i=0; i<botonLetras.length; i++ ){
         //console.log(botonLetra);
         const inactivarBoton = event.target;
         inactivarBoton.disabled = true;
-        
-        buscarLetraEnPalabra(botonLetra);        
+        buscarLetraEnPalabra(botonLetra);
     });
 }
-
 
 function buscarLetraEnPalabra(botonLetra){
 
@@ -91,7 +89,7 @@ function reiniciarSpan(){
 }
 function reiniciarBotonesLetras(){
     for(var i=0; i<botonLetras.length; i++ ){
-        botonLetras[i].disabled = false;    
+        botonLetras[i].disabled = false;
     }
     botonLetra = "";
 }
